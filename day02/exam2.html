@@ -43,6 +43,26 @@
         <li> 항목2</li>
     </ul>
 
+    <img src = "./짱구.jpg" /> <!--img : 이미지 마크업-->
+    <img src = "../짱구.jpg" />
+    <!--상대경로란?  현재 코드를 작성하는 위치 기준으로 불러올 파일의 경로 지정-->
+    <!--
+        ./ : 현재폴더이며 생략 가능
+        ../ : 상위폴더 1번 이동 , day02 폴더 기준으로 상위폴더 1번 이동하면 2026_FRONT
+        ../../ : 상위폴더 2번 이동
+    -->
+    <!-- 절대경로란? 불러올 파일의 전체 경로 지정 , 로컬 vs 서버(네트워크로 자료 제공하느 PC) -->
+
+    <br />
+    <audio src = "오디오.mp3" controls autoplay> </audio> <!--audio : 오디오 마크업-->
+    <video src = "비디오.mp4" controls autoplay muted> </video> <!--video : 비디오 마크업-->
+    <!-- autoplay 브라우저 정책상 불가능하다. 단 muted(음소거) 하면 가능하다. -->
+
+    <!-- 유튜브 영상 퍼가기 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KYap02KZG1U?si=oN-lzXMr7lv7BpxJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- 구글 지도 퍼가기 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b67b86fa90ca9%3A0x50ab76efd5310e0d!2z7ISx6rKw64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1783415002039!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
 </body> <!--HTML 본문 끝-->
 
 </html> <!--HTML 끝-->
