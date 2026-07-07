@@ -39,7 +39,7 @@ const 이름상자3 = 300
 이름상자3
 console.log(이름상자3)
 // 상수의 값 수정, **불가능**
-이름상자3 = 400
+// 이름상자3 = 400
 
 // 생각해보기
 let point1 = 50
@@ -52,3 +52,24 @@ let point4 = point1 + point2 //50 리터럴과 50 리터럴 더해서 새로운 
 let age = 10
 let speed = 10
 // 두 변수는 같은 리터럴10 저장하지만 서로 다른 의미 갖는 10 저장하는 변수 표현
+
+// 출력함수
+// 함수 : 자주 사용되는 코드들을 정의하여 재사용/ 호출, 내가 만든 함수 vs 남이 만든 함수
+// 1. console.log(출력할자료) : 브라우저 개발자도구[F12] CONSOLE 탭
+console.log("안녕하세요")
+
+// 2. alert(출력할자료) : 브라우저 알림창에 메시지 출력
+alert("안녕하세요")
+
+// 3. *document.querySelector("선택자")*
+document(html문서) , query(질의) , Selector(선택자) , inner(마크업사이)
+document.querySelector("h3").innerHTML = "JS에서 대입한값"
+
+// 입력함수
+// 1. confirm(출력할메시지) : 브라우저 [확인=true]/[취소=false] 알림창 , true/false 반환ㄴㄴ
+let 결과1 = confirm() // 입력받은 true 또는 false 변수에 저장
+console.log(결과1)
+
+// 2. prompt : 브라우저 입력가능한 알림창 , 입력한 자료 반환
+let 결과2 = prompt() 
+console.log(결과2)
