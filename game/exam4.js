@@ -27,8 +27,8 @@ if (
 {console.log('승리입니다.');}
 //무승부
 else if(
-   (board[0] !== "" && board[1] !== "" && board[2] !== "") ||
-   (board[3] !== "" && board[4] !== "" && board[5] !== "") ||
+   (board[0] !== "" && board[1] !== "" && board[2] !== "") &&
+   (board[3] !== "" && board[4] !== "" && board[5] !== "") &&
    (board[6] !== "" && board[7] !== "" && board[8] !== "")
 )
 {console.log('무승부입니다.');}
