@@ -38,11 +38,4 @@ else if(
 )
 {console.log('무승부입니다.');}
 // 게임이 끌나지 않고 턴 교체
-else {
-        if (선공 === 'X') {
-            선공 = 'O';
-        } else {
-            선공 = 'X';
-        }
-        console.log("다음 턴: "+ 선공);
-    }
+else {console.log('게임종료');}
