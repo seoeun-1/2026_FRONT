@@ -8,7 +8,7 @@
 //3. console.log()를 사용하여 정해진 형식으로 주문 내역을 콘솔에 출력합니다.
 
 let name = prompt("이름")
-let 메뉴 = prompt("음료")
+let menu = prompt("음료")
 let count = prompt("수량")
 
 console.log("[주문 접수]")
