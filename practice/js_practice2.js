@@ -53,7 +53,9 @@ console.log("좋아요 : " + likeCount)
 //초기 배열: let todoList = ['장보기', '과제하기'];
 //힌트: 배열에 요소를 추가할 때는 .push() 메소드를 사용합니다.
 let todoList = ['장보기', '과제하기'];
-let 목록 = 
+let 새목록 = prompt("새목록")
+todoList.push(새목록)
+console.log(todoList)
 //문제 10: 대기열의 마지막 사람 확인하기
 //다음과 같이 대기자 명단이 담긴 waitingList 배열이 있습니다. 배열의 마지막에 있는 사람의 이름을 찾아 "마지막 대기자는 [이름]입니다." 형식으로 콘솔에 출력하는 프로그램을 작성하시오.
 //초기 배열: let waitingList = ['김민준', '이서연', '박도윤', '최지우'];
