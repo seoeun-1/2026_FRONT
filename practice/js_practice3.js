@@ -38,7 +38,7 @@ else{ console.log('red') }
 // 10,000원 이상 30,000원 미만: 1% 할인
 // 10,000원 미만: 할인 없음
 
-
+let 총구매 = Number
 
 // 문제 4: 월(Month)에 따른 계절 판별
 // 1부터 12 사이의 월(Month)을 숫자로 입력받아, 해당하는 계절을 출력하는 프로그램을 작성하시오.
@@ -48,15 +48,15 @@ else{ console.log('red') }
 // 겨울: 12, 1, 2월
 // 만약 1~12 이외의 숫자를 입력하면 '잘못된 월입니다.'를 출력하세요.
 
-let month = Number(prompt('월'));
+let 월 = Number(prompt('월'));
 
-if (month < 1 || month > 12 || !Number.isInteger(month)) {
+if (월 < 1 || 월 > 12 || !Number.isInteger(month)) {
   console.log('잘못된 월입니다.')
-} else if (month >= 3 && month <= 5) {
+} else if (월 >= 3 && 월 <= 5) {
   console.log('봄')
-} else if (month >= 6 && month <= 8) {
+} else if (월 >= 6 && 월 <= 8) {
   console.log('여름')
-} else if (month >= 9 && month <= 11) {
+} else if (월 >= 9 && 월 <= 11) {
   console.log('가을')
 } else {
   console.log('겨울')
