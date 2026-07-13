@@ -1,0 +1,19 @@
+/* 웹 페이지 전체 설정 */
+body {
+    margin: 0;                     /* 기본 바깥 여백 제거 */
+    min-height: 100vh;             /* 화면 전체 높이 사용 */
+    background-color: black;       /* 배경색 검정 */
+
+    display: flex;                 /* Flexbox 사용 */
+    justify-content: center;       /* 가로 가운데 정렬 */
+    align-items: center;           /* 세로 가운데 정렬 */
+}
+
+/* 별을 출력하는 영역 */
+#star-output {
+    color: white;                  /* 별 색상 */
+    font-size: 24px;               /* 글자 크기 */
+    font-family: monospace;        /* 고정폭 글꼴 */
+    white-space: pre;              /* 공백과 줄바꿈 유지 */
+    line-height: 1.2;              /* 줄 간격 */
+}
