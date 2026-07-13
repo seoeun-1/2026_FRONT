@@ -168,3 +168,13 @@ else { console.log('플레이어2 승리') }
 // 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
 // let courseList = ['수학', '영어', '과학', '국어'];
 // 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요. 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.
+let courseList = ['수학', '영어', '과학', '국어'];
+let 제외과목 = prompt('제외과목');
+let courseIndex = courseList.indexOf(removeCourse);
+
+if (courseIndex === -1) {
+  console.log('해당 과목은 신청 목록에 없습니다.');
+} else {
+  courseList.splice(courseIndex, 1);
+  console.log(courseList);
+}
