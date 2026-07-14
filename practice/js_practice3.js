@@ -38,7 +38,21 @@ else{ console.log('red') }
 // 10,000원 이상 30,000원 미만: 1% 할인
 // 10,000원 미만: 할인 없음
 
-let 총구매 = Number
+let 구매금액 = Number(prompt('구매 금액'));
+
+if (구매금액 >= 50000) {
+    console.log('10% 할인');
+    console.log('최종 금액 : '+ (구매금액 * 0.9) + '원');
+} else if (구매금액 >= 30000) {
+    console.log('5% 할인');
+    console.log('최종 금액 : ' + (구매금액 * 0.95) + '원');
+} else if (구매금액 >= 10000) {
+    console.log('1% 할인');
+    console.log('최종 금액 : ' + (구매금액 * 0.99) + '원');
+} else {
+    console.log('할인 없음');
+    console.log('최종 금액 :' + 구매금액 + '원');
+}
 
 // 문제 4: 월(Month)에 따른 계절 판별
 // 1부터 12 사이의 월(Month)을 숫자로 입력받아, 해당하는 계절을 출력하는 프로그램을 작성하시오.
@@ -48,20 +62,19 @@ let 총구매 = Number
 // 겨울: 12, 1, 2월
 // 만약 1~12 이외의 숫자를 입력하면 '잘못된 월입니다.'를 출력하세요.
 
-let 월 = Number(prompt('월'));
+let month = Number(prompt('월'))
 
-if (월 < 1 || 월 > 12 || !Number.isInteger(month)) {
-  console.log('잘못된 월입니다.')
-} else if (월 >= 3 && 월 <= 5) {
-  console.log('봄')
-} else if (월 >= 6 && 월 <= 8) {
-  console.log('여름')
-} else if (월 >= 9 && 월 <= 11) {
-  console.log('가을')
+if (month == 3 || month == 4 || month == 5) {
+    console.log('봄')
+} else if (month == 6 || month == 7 || month == 8) {
+    console.log('여름')
+} else if (month == 9 || month == 10 || month == 11) {
+    console.log('가을')
+} else if (month == 12 || month == 1 || month == 2) {
+    console.log('겨울')
 } else {
-  console.log('겨울')
+    console.log('잘된 월입니다.')
 }
-  
 
 // 문제 5: 세 수 중 가장 큰 수 찾기
 // 서로 다른 세 개의 정수를 입력받아, 가장 큰 수를 출력하는 프로그램을 작성하시오.
@@ -87,10 +100,10 @@ console.log( max )
 
 let year = Number(prompt('연도'))
 
-if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-  console.log(`${year}년은 윤년입니다.`);
+if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+  console.log(`${year}년은 윤년입니다.`)
 } else {
-  console.log(`${year}년은 평년입니다.`);
+  console.log(`${year}년은 평년입니다.`)
 }
 
 // 문제 7: 세 수 오름차순 정렬
@@ -163,18 +176,30 @@ else { console.log('플레이어2 승리') }
 // 차량 번호 목록: let carArray = [ '250어7142', '142가7415', '888호8888' ];
 // 주차 위치 목록: let locationArray = [ 'A1', 'B3', 'C2' ];
 // 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오. 만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.
+let carArray = ['250어7142', '142가7415', '888호8888']
+let locationArray = ['A1', 'B3', 'C2']
+let car = prompt('차량 번호')
 
+if (car == carArray[0]) {
+    console.log(locationArray[0]);
+} else if (car == carArray[1]) {
+    console.log(locationArray[1]);
+} else if (car == carArray[2]) {
+    console.log(locationArray[2]);
+} else {
+    console.log('차량이 존재하지 않습니다.');
+}
 // 문제 10: 수강 신청 목록에서 과목 제외하기
 // 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
 // let courseList = ['수학', '영어', '과학', '국어'];
 // 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요. 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.
-let courseList = ['수학', '영어', '과학', '국어'];
-let 제외과목 = prompt('제외과목');
-let courseIndex = courseList.indexOf(removeCourse);
+let courseList = ['수학', '영어', '과학', '국어']
+let 제외과목 = prompt('제외 과목')
 
-if (courseIndex === -1) {
-  console.log('해당 과목은 신청 목록에 없습니다.');
+if (courseList.includes(course)) {
+    let index = courseList.indexOf(제외과목);
+    courseList.splice(index, 1);
+    console.log(courseList)
 } else {
-  courseList.splice(courseIndex, 1);
-  console.log(courseList);
+    console.log("해당 과목은 신청 목록에 없습니다.")
 }
