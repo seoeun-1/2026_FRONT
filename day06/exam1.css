@@ -58,7 +58,7 @@ html > body > div > ol > li{ }
     line-height: 160%;          /* 줄간격 , %백분위 */
 }
 .작성자{
-    text-align: center;         /* 텍스트 가로정렬 : left center right */
+    text-align: center;         /* 텍스트 가로정렬 : left, center, right */
     text-decoration: underline overline line-through ;
     /* underline : 밑줄 , overline 윗줄 , line-through 취소선 */
     text-shadow: 5px 3px 5px blue;
