@@ -201,5 +201,5 @@ if (courseList.includes(course)) {
     courseList.splice(index, 1);
     console.log(courseList)
 } else {
-    console.log("해당 과목은 신청 목록에 없습니다.")
+    console.log('해당 과목은 신청 목록에 없습니다.')
 }
