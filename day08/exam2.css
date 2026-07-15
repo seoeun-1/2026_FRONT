@@ -1,0 +1,41 @@
+*{ border : 1px soild red; }
+.box{ width: 100px; }
+
+/* display : flex */
+.flexbox1{
+    display: flex; /*하위요소들 배치 방법 */
+    width: 250px;
+    /* 만약에 하위요소들의 크기가 구역보다 커지면 하위요소 자동크기조절*/
+    flex-wrap: nowrap; /* 기본값 */
+}
+
+.flexbox2{
+    display: flex; width: 250px;
+    /* 만약에 하위요소들의 크기가 구역보다 커지면 자동 줄바꿈*/
+    flex-wrap: wrap; /* 기본값 */
+}
+
+.flexbox3{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox4{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox5{
+    display: flex;
+    justify-content: flex-start; /* 하위 요소들 가로 정렬(왼쪽정렬/기본값) */
+}
+
+.flexbox6{
+    display: flex;
+    justify-content: flex-end; /* 오른쩍 정렬 */
+}
+
+.flexbox7{
+    display: flex;
+    justify-content: flex-center;
+}
