@@ -1,21 +1,66 @@
 * {
 /* border: solid 1px red; */
 }
+@font-face {
+    font-family: 'Juache';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
 .페이지 {
-  width: 1080px;
-height: 1920px;
+    width: 1080px;
+    height: 1920px;
 }
 
 header {
-width: 100%;
-height: 100px;
-max-width: 1080px;
-position: fixed;
-border: 3px solid blue;
-top: 0;
-z-index: 100;
-background-color: beige;
+    position: fixed;    
+    top:0;
+    width:1080px;
+    height:180px;
+    background-color:#E6CEB0;
+    z-index:100;
+    font-family: 'Juache', sans-serif;
 }
+
+.category-wrap{
+    padding:20px 40px;
+}
+
+
+.카페{
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:20px;
+    padding-left: 90px;
+}
+
+.category-list{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    /*border: 1px solid red;*/
+}
+
+.category{
+    width:130px;
+    height:70px;
+    border:2px solid #b7843d;
+    border-radius:20px;
+    background:#fff;
+    font-size:25px;
+    font-weight:600;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Juache', sans-serif;
+    
+}
+
+.category.active{
+    background:#a77734;
+    color:#fff;
+}
+
 footer {
 width: 100%;
 height: 100px;
