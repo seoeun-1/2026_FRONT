@@ -290,7 +290,6 @@ function vacationAdd() {
         vend: vend,
         vstory: vstory
     };
-
     vacation.push(object);
     finalVcode++;
 

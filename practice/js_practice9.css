@@ -155,9 +155,6 @@ select {
     gap: 14px;
 }
 
-
-/* JavaScript에서 생성하는 휴가 항목 */
-
 .vacationItem {
     display: flex;
     justify-content: space-between;
