@@ -1,8 +1,3 @@
-//휴가 관리 기능:
-//신청: 휴가 정보를 입력하고 "신청" 버튼 클릭 시, 휴가 신청 목록에 즉시 추가되어야 합니다.
-//취소: "신청취소" 버튼 클릭 시, 해당 휴가 신청 내역이 목록에서 제거되어야 합니다.
-
- 
 let staff = [{scode: 1, sname: '김민준', pcode: 1 ,cimage: 'https://placehold.co/100', tcode: 1},
              {scode: 2, sname: '이서연', pcode: 2 , image: 'https://placehold.co/100',tcode: 2},
              {scode: 3, sname: '박도윤', pcode:3, image: 'https://placehold.co/100', tcode: 3}];
