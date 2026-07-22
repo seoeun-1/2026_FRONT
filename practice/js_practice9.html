@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="js_practice9.css">
+    <script src="js_practice9.js" defer></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <section id="vacationHeader" class="card">
+
+            <h3 class="cardTitle">사원 휴가 신청</h3>
+
+            <!-- 신청 사원 -->
+            <div class="formGroup">
+                <label for="staffSelect">신청 사원</label>
+
+                <select
+                    id="staffSelect"
+                    class="staffSelect"
+                >
+                    <option value="disabled" selected disabled>
+                        휴가 신청 사원을 선택하세요
+                    </option>
+                </select>
+            </div>
+
+            <div class="dateArea">
+
+                <div class="formGroup">
+                    <label for="startDate">휴가 시작일</label>
+
+                    <input
+                        type="date"
+                        id="startDate"
+                        class="startDate"
+                    >
+                </div>
+
+                <div class="formGroup">
+                    <label for="endDate">휴가 종료일</label>
+
+                    <input
+                        type="date"
+                        id="endDate"
+                        class="endDate"
+                    >
+                </div>
+
+            </div>
+
+            <div class="formGroup">
+                <label for="reason">휴가 사유</label>
+
+                <input
+                    type="text"
+                    id="reason"
+                    class="reason"
+                    placeholder="예: 여름 휴가"
+                    maxlength="100"
+                >
+            </div>
+
+            <div class="submitArea">
+                <button
+                    type="button"
+                    class="submitBtn"
+                    onclick="vacationAdd()"
+                >
+                    신청
+                </button>
+            </div>
+
+        </section>
+
+        <section id="vacationMain" class="card">
+
+            <h3 class="cardTitle">휴가 신청 전체 목록</h3>
+
+            <!-- JS에서 휴가 신청 내역 출력 -->
+            <div id="vacationList"></div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
